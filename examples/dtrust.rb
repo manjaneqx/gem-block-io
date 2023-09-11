@@ -84,7 +84,7 @@ puts "*** Withdrawing from dtrust_address_label to the 'default' label in normal
 
 # note use of prepare_dtrust_transaction instead of prepare_transaction, since this is a dTrust transaction
 # we're not doing any inspection here, but you will in your own code
-prepared_transaction = blockio.prepare_dtrust_transaction(:from_labels => dtrust_address_label, :to_addresses => normal_address, :amounts => '0.0009')
+prepared_transaction = blockio.prepare_dtrust_transaction(:from_labels => dtrust_address_label, :to_addresses => normal_address, :amounts => '1000')
 
 # create the transaction and sign it with the keys we've provided
 # we're signing the transaction partially by supplying only 3 of our 4 keys
